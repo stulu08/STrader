@@ -1,0 +1,38 @@
+name: STrader
+version: 1.0-SNAPSHOT
+main: de.stulu.strader.main
+api-version: 1.16
+authors: [ Stulu ]
+
+
+permissions:
+  strader.spawn:
+    default: op
+  strader.acces:
+    default: true
+  strader.buy:
+    default: true
+  strader.sell:
+    default: true
+  strader.default:
+    children:
+      strader.acces: true
+      strader.buy: true
+      strader.sell: true
+    default: true
+  strader.*:
+    children:
+      strader.spawn: true
+      strader.op: true
+      strader.acces: true
+      strader.buy: true
+      strader.sell: true
+    default: op
+
+commands:
+  traderspawn:
+    permission: strader.spawn
+    description: Command to spawn an trader
+  spawnDefaultTraders:
+    permission: strader.spawn
+    description: Command to spawn all default traders
