@@ -1,4 +1,4 @@
-# STrader
+# Detailes guide: https://www.spigotmc.org/resources/strader.90791/
 STrader ~ A fully customizable entity trader plugin
 
 This is a plugin where you can create entity traders that you can spawn inside you world or make them spawn on server start with just a single command:
